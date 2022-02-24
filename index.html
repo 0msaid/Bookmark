@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmark your favorite sites</title>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head-section">
+        <h2>Bookmarker</h2>
+        <hr />
+      </div>
+      <div class="form-section text-center">
+          <h2>Bookmark your favorite sites</h2>
+
+        <div class="form-group  text-center">
+          <label for="siteName" class="label-bold">site Name</label>
+          <input type="text" class="form-control w-75 m-auto"  id="siteName" >
+          <div id="alertName" class="alert alert-danger  w-75 m-auto">
+            <p>name invalid</p>
+          </div>
+        </div>
+        <div class="form-group  text-center" >
+          <label for="siteURL" class="label-bold">site URL </label>
+          <input type="text" class="form-control w-75 m-auto" id="siteURL" >
+          <div id="alertUrl" class="alert alert-danger  w-75 m-auto">
+            <p>url invalid</p>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-4" onclick="addWebSite()">Add</button>
+      </div>
+      <hr>
+    </div>
+
+
+    <div class="container">
+      <input type="text" onkeyup="search(this.value)" placeholder="search......" class="form-control w-75 m-auto">
+        <table class="table mt-5 table-striped">
+            <thead>
+    
+            </thead>
+            <tbody id="tableBody">
+              
+            </tbody>
+        </table>
+    </div>
+   
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
